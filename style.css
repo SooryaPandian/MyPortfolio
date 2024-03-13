@@ -8,6 +8,8 @@
 
 
 body{
+    color: aliceblue;
+    background-color: black;
     font-family: "Poppins", sans-serif;
 }
 html
@@ -38,7 +40,7 @@ nav{
 }
 a{
     text-decoration: none;
-    color: black;
+    color: aliceblue;
     text-decoration-color: white;
 }
 a:hover{
