@@ -1,41 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-body{
+body {
     color: aliceblue;
-    background-image:url('assests/background.jpg');
+    background-image: url('assests/background.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-family: "Poppins", sans-serif;
-   
 }
 
-pre{
-    padding: 10%;
-    font-size: 20px;
-}
-html
-{
+html {
     scroll-behavior: smooth;
 }
-p{
-    color: rgb(85, 85,85);
+
+p {
+    color: rgb(85, 85, 85);
 }
+
 /* Transition */
-a, .btn{
+a, .btn {
     transition: all 300ms ease;
 }
 
-/* Deskotop */
-#header, .nav-links{
-    display:flex;
+a {
+    text-decoration: none;
+    color: aliceblue;
+    text-decoration-color: white;
 }
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+section {
+    padding-top: 10vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* Desktop */
+#header, .nav-links {
+    display: flex;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -45,29 +61,38 @@ a, .btn{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    background-color: rgba(0, 0, 0); /* Added a background color for visibility */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: rgba(0, 0, 0); 
+    z-index: 1000; 
 }
 
-.nav-links{
-    gap:2rem;
+#soorya {
+    border-radius: 50%;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+#profile {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.image-section {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.nav-links {
+    gap: 2rem;
     font-size: 1.5rem;
 }
-a{
-    text-decoration: none;
-    color: aliceblue;
-    text-decoration-color: white;
-}
-a:hover{
-    color: gray;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
-}
 
-.logo{
+.logo {
     font-size: 2rem;
 }
-.logo:hover{
+
+.logo:hover {
     cursor: default;
 }
