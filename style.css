@@ -9,8 +9,16 @@
 
 body{
     color: aliceblue;
-    background-color: black;
+    background-image:url('assests/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     font-family: "Poppins", sans-serif;
+   
+}
+
+pre{
+    padding: 10%;
+    font-size: 20px;
 }
 html
 {
@@ -25,17 +33,24 @@ a, .btn{
 }
 
 /* Deskotop */
-nav, .nav-links{
+#header, .nav-links{
     display:flex;
 }
-nav{
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    background-color: rgba(0, 0, 0); /* Added a background color for visibility */
+    z-index: 1000; /* Ensure it stays on top of other elements */
 }
+
 .nav-links{
     gap:2rem;
-    list-style: none;
     font-size: 1.5rem;
 }
 a{
