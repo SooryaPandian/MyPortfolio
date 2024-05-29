@@ -68,8 +68,8 @@ section {
     height: 350px;
     border-radius: 50%;
     transition: 0.5s ease;
-    border: 1rem solid transparent;
-    animation: surya 2s alternate infinite;
+    border: 0.1rem solid transparent;
+    animation: surya 3s alternate infinite;
 }
 
 @keyframes surya {
@@ -77,14 +77,14 @@ section {
         transform: translateY(10%);
     }to {
         transform: translateY(-10%);
-        border: 1rem solid #1fa9ee;
+        border: 0.1rem solid #1fa9ee;
         box-shadow: 0 0 40px 10px #1fa9ee;
     }   
 }
 
 
 .image-section img:hover {
-    border: 1rem solid #1fa9ee;
+    border: 0.1rem solid #1fa9ee;
     box-shadow: 0 0 40px #1fa9ee;
 }
 
