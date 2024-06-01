@@ -60,7 +60,9 @@ a:hover {
 }
 section {
     display: flex;
-    padding: 15rem 5%;   
+    padding: 15rem 5%;  
+    justify-content: center;
+    align-items: center; 
 }
 .image-section img{
     object-fit: cover;
@@ -71,11 +73,14 @@ section {
     border: 0.1rem solid transparent;
     animation: surya 3s alternate infinite;
 }
-
+.about{
+    padding-left: 5rem;
+}
 @keyframes surya {
     from {
         transform: translateY(10%);
-    }to {
+    }
+    to {
         transform: translateY(-10%);
         border: 0.1rem solid #1fa9ee;
         box-shadow: 0 0 40px 10px #1fa9ee;
