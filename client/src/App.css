@@ -1,0 +1,8 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url('assests/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+}
