@@ -1,0 +1,128 @@
+/* styles/Desktop.css */
+
+/* Desktop Container */
+.desktop {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #3b3e45;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .top-bar-left {
+    font-weight: bold;
+  }
+  
+  .top-bar-right {
+    font-weight: normal;
+  }
+  
+  /* Left Taskbar */
+  .left-taskbar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 60px;
+    height: calc(100% - 40px);
+    background-color: #3b3e45;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #4a4e57;
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon:hover {
+    background-color: #58606b;
+  }
+  
+  .icon.active .dot {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    margin-left: 60px;
+    padding-top: 60px;
+    text-align: center;
+  }
+  
+  /* Window Styles */
+  .window {
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: visible; /* Ensure content is visible */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .window-header {
+    background-color: #3b3e45;
+    color: #ffffff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .window-controls button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+  
+  .window-controls button:hover {
+    color: red;
+  }
+  
+  .window-content {
+    color: #3b3e45;
+    padding: 15px; /* Increased padding for better spacing */
+    flex-grow: 1;  /* Allow content to expand and fill window */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+  

@@ -1,0 +1,23 @@
+.window {
+    position: absolute;
+    width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .window-header {
+    background-color: #3b3e45;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .window-content {
+    padding: 10px;
+  }
+  
